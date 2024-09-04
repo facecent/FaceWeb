@@ -1,0 +1,109 @@
+#!Name=Q-Search V2.0 Modified version
+#!Desc=Safari Search [Command+Space+Keyword] or [Keyword+Space+Command],
+*!Annotate:Please go to the settings first to change the default search engine of Safari to DuckDuckGo.
+#!HomePage=https://t.me/ddgksf2021 
+#!Author=ddgksf2021
+
+[MITM]
+hostname = duckduckgo.com
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>Translate
+# trc   xxx (Google Translate into Chinese)
+^https:\/\/duckduckgo.com\/\?q=trc\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+trc.+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1
+# tre   xxx (Google Translate into English)
+^https:\/\/duckduckgo.com\/\?q=tre\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+tre.+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1
+# trj   xxx (Google Translate into Japanese)
+^https:\/\/duckduckgo.com\/\?q=trj\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+trj.+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>Community
+# tt   xxx (Toutiao)
+^https:\/\/duckduckgo.com\/\?q=tt\+([^&]+).+ url 302 https://so.toutiao.com/search?keyword=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+tt.+ url 302 https://so.toutiao.com/search?keyword=$1
+# db   xxx (Douban)
+^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ url 302 https://m.douban.com/search?query=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+db.+ url 302 https://m.douban.com/search?query=$1
+# zh   xxx (Zhihu)
+^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+ url 302 http://www.zhihu.com/search?q=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+zh.+ url 302 http://www.zhihu.com/search?q=$1
+# wb   xxx (Weibo)
+^https:\/\/duckduckgo.com\/\?q=wb\+([^&]+).+ url 302 https://s.weibo.com/weibo/$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+wb.+ url 302 https://s.weibo.com/weibo/$1
+# tw   xxx (Twitter)
+^https:\/\/duckduckgo.com\/\?q=tw\+([^&]+).+ url 302 https://twitter.com/search?q=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+tw.+ url 302 https://twitter.com/search?q=$1
+# gh   xxx (GitHub)
+^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ url 302 https://github.com/search?q=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+gh.+ url 302 https://github.com/search?q=$1
+# gu   xxx (GitHub User)
+^https:\/\/duckduckgo.com\/\?q=gu\+([^&]+).+ url 302 https://github.com/search?q=$1&type=users
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+gu.+ url 302 https://github.com/search?q=$1&type=users
+# gc   xxx (GitHub Code)
+^https:\/\/duckduckgo.com\/\?q=gc\+([^&]+).+ url 302 https://github.com/search?o=desc&q=$1&s=indexed&type=Code
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+gc.+ url 302 https://github.com/search?o=desc&q=$1&s=indexed&type=Code
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>Shopping
+# jd   xxx (Jingdong)
+^https:\/\/duckduckgo.com\/\?q=jd\+([^&]+).+ url 302 openapp.jdmobile://virtual?params={"des":"productList","keyWord":"$1","from":"search","category":"jump"}
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+jd.+ url 302 openapp.jdmobile://virtual?params={"des":"productList","keyWord":"$1","from":"search","category":"jump"}
+# tb   xxx (Taobao)
+^https:\/\/duckduckgo.com\/\?q=tb\+([^&]+).+ url 302 taobao://s.taobao.com?q=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+tb.+ url 302 taobao://s.taobao.com?q=$1
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>Video
+# yt   xxx (YouTube)
+^https:\/\/duckduckgo.com\/\?q=yt\+([^&]+).+ url 302 https://www.youtube.com/results?search_query=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+yt.+ url 302 https://www.youtube.com/results?search_query=$1
+# bli  xxx (Bilibili)
+^https:\/\/duckduckgo.com\/\?q=bli\+([^&]+).+ url 302 https://m.bilibili.com/search?keyword=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+bli.+ url 302 https://m.bilibili.com/search?keyword=$1
+# ph   xxx (PornHub)
+^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+ url 302 https://cn.pornhub.com/video/search?search=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+ph.+ url 302 https://cn.pornhub.com/video/search?search=$1
+# af   xxx (Acfun)
+^https:\/\/duckduckgo.com\/\?q=af\+([^&]+).+ url 302 https://www.acfun.cn/search?keyword=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+af.+ url 302 https://www.acfun.cn/search?keyword=$1
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>App Store switch
+#Source link>>https://www.liangjianghu.com/searchads-appstore-switch
+#How to use: Enter the area code and search
+# cn  (Switch to China)
+^https:\/\/duckduckgo.com\/\?q=cn&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc=
+# hk  (Switch to Hong Kong)
+^https:\/\/duckduckgo.com\/\?q=hk&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143463&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=hk&urlDesc=
+# tw  (Switch to Taiwan)
+^https:\/\/duckduckgo.com\/\?q=tw&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143470&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tw&urlDesc=
+# us  (Switch to United States)
+^https:\/\/duckduckgo.com\/\?q=us&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143441&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=us&urlDesc=
+# jp  (Switch to Japan)
+^https:\/\/duckduckgo.com\/\?q=jp&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143462&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=jp&urlDesc=
+# kr  (Switch to Korea)
+^https:\/\/duckduckgo.com\/\?q=kr&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143466&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=kr&urlDesc=
+# tr  (Switch to Turkey)
+^https:\/\/duckduckgo.com\/\?q=tr&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143480&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc=
+# sg  (Switch to Singapore)
+^https:\/\/duckduckgo.com\/\?q=sg&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143464&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc=
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>Search
+# bd   xxx (Baidu Search)
+^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ url 302 https://www.baidu.com/s?wd=$1
+^https:\/\/duckduckgo.com\/\?q=((.(?!bd))+)\+bd.+ url 302 https://www.baidu.com/s?wd=$1
+# wk   xxx (Wikipedia Search)
+^https:\/\/duckduckgo.com\/\?q=wk\+([^&]+).+ url 302 https://zh.wikipedia.org/wiki/$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+wk.+ url 302 https://zh.wikipedia.org/wiki/$1
+# yh   xxx (Greasyfork Search)
+^https:\/\/duckduckgo.com\/\?q=yh\+([^&]+).+ url 302 https://greasyfork.org/zh-CN/scripts?q=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+yh.+ url 302 https://greasyfork.org/zh-CN/scripts?q=$1 
+# by   xxx (Bing Search)
+^https:\/\/duckduckgo.com\/\?q=by\+([^&]+).+ url 302 https://www.bing.com/search?q=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+by.+ url 302 https://www.bing.com/search?q=$1
+#      xxx （Default Google Search）
+^https:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://www.google.com/search?q=$1
