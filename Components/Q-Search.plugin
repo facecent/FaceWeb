@@ -3,7 +3,7 @@
 #!explain=Please go to the settings first to change the default search engine of Safari to DuckDuckGo.
 #!quote=https://t.me/ddgksf2021 
 
-[Rewrite]
+[Script]
 #>>>>>>>>>>>>>>>>>>>>>>>Translate
 # trc   xxx (Google Translate into Chinese)
 ^https:\/\/duckduckgo.com\/\?q=trc\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1
