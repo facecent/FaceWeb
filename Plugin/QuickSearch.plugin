@@ -34,7 +34,7 @@
 # http-request ^https:\/\/duckduckgo\.com\/\?q=dlc\+([^&]+).+ requires-body=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/DeepLQ-search.js,tag=DeepLtoChinese
 
 [Rewrite]
-^https:\/\/duckduckgo\.com\/\?q=dlc\+([^&]+).+ 302 https://www.deepl.com/zh/translator#en/zh-hans/=$1
+^https:\/\/duckduckgo\.com\/\?q=dlc\+([^&]+).+ 302 https://www.deepl.com/zh/translator#en/zh-hans/
 ^https:\/\/duckduckgo\.com\/\?q=bd\+([^&]+).+ 302 https://www.baidu.com/s?wd=$1
 ^https:\/\/duckduckgo\.com\/\?q=bdimg\+([^&]+).+ 302 https://image.baidu.com/search/index?tn=baiduimage&word=$1
 ^https:\/\/duckduckgo\.com\/\?q=ggimg\+([^&]+).+ 302 https://www.google.com/search?&tbm=isch&q=$1
