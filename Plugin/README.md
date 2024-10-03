@@ -30,7 +30,7 @@
 > ius = App Store切换至美国区
 > ihk = App Store切换至香港区
 > itw = App Store切换至台湾区 
-># ijp = App Store切换至日本区
-># ikr = App Store切换至韩国区 
-># itr = App Store切换至土耳其区
-># 无快捷键则默认使用Google搜索
+> ijp = App Store切换至日本区
+> ikr = App Store切换至韩国区 
+> itr = App Store切换至土耳其区
+> 无快捷键则默认使用Google搜索
