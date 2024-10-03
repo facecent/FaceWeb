@@ -16,7 +16,7 @@ ph = PornHub搜索      > db = 豆瓣搜索<br>
 zh = 知乎搜索          > wb = 微博搜索<br>
 tt = Twitte          > jd = 京东搜索<br>
 tb = 淘宝搜索          > ddg = DuckDuckGo搜索<br>
-ydimg = yandex图片搜索<br>
+ydimg = Yandex图片搜索<br>
 icn = App Store切换至中国区<br>
 ius = App Store切换至美国区<br>
 ihk = App Store切换至香港区<br>
