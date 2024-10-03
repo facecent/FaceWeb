@@ -5,8 +5,8 @@
 3. 目前仅内置了一些常用站点的支持，他们的`快捷键`如下：
 <hr />
 <p> 
-bd = 百度搜索         > bdimg = 百度<br>
-ghimg = 谷歌图片搜索   > by = Bing搜索<br>
+bd = 百度搜索         > bdimg = 百度图片搜索<br>
+ghimg = 谷歌图片搜索   > by = 必应搜索<br>
 wk = 维基搜索         > qm = 七麦搜索<br>
 gh = GitHub         > yh = 油猴搜索<br>
 ggc = Google译至中    > gge = Google译至英<br>
