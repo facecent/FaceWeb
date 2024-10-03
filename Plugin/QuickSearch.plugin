@@ -10,14 +10,11 @@
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Safari.png
 #!date = 2023-09-08 13:48:55
 
-[Script]
+[Rewrite]
 
 # Safari内输入快捷键+空格+搜索关键词快速指定搜索引擎搜索
 # 先进入设置更改Safari默认搜索为DuckDuckGo
 
-# dlc = DeepL译至中
-# dle = DeepL译至英
-# dlj = DeepL译至日
 # bd = 百度搜索
 # bdimg = 百度图片搜索
 # ghimg = 谷歌图片搜索
@@ -26,15 +23,30 @@
 # qm = 七麦搜索
 # gh = GitHub搜索
 # yh = 油猴搜索
-# ggc = Google
-# gge = Google
-# ggj = Google
+# ggc = Google译至中
+# gge = Google译至英
+# ggj = Google译至日
+# ytb = YouTube搜索
+# bli = 哔哩哔哩搜索
+# af = AcFun搜索
+# ph = PornHub搜索
+# db = 豆瓣搜索
+# zh = 知乎搜索
+# wb = 微博搜索
+# tt = Twitter
+# jd = 京东搜索
+# tb = 淘宝搜索
+# ddg = DuckDuckGo搜索
+# icn = App Store切换至中国区 感谢@mieqq
+# ius = App Store切换至美国区 感谢@mieqq
+# ihk = App Store切换至香港区 感谢@mieqq
+# itw = App Store切换至台湾区 感谢@mieqq
+# ijp = App Store切换至日本区 感谢@mieqq
+# ikr = App Store切换至韩国区 感谢@mieqq
+# itr = App Store切换至土耳其区 感谢@mieqq
 # 无快捷键则默认使用Google搜索
 
-# http-request ^https:\/\/duckduckgo\.com\/\?q=dlc\+([^&]+).+ requires-body=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/DeepLQ-search.js,tag=DeepLtoChinese
 
-[Rewrite]
-^https:\/\/duckduckgo\.com\/\?q=dlc\+([^&]+).+ 302 https://www.deepl.com/zh/translator#en/zh-hans/
 ^https:\/\/duckduckgo\.com\/\?q=bd\+([^&]+).+ 302 https://www.baidu.com/s?wd=$1
 ^https:\/\/duckduckgo\.com\/\?q=bdimg\+([^&]+).+ 302 https://image.baidu.com/search/index?tn=baiduimage&word=$1
 ^https:\/\/duckduckgo\.com\/\?q=ggimg\+([^&]+).+ 302 https://www.google.com/search?&tbm=isch&q=$1
@@ -46,6 +58,24 @@
 ^https:\/\/duckduckgo\.com\/\?q=ggc\+([^&]+).+ 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1
 ^https:\/\/duckduckgo\.com\/\?q=gge\+([^&]+).+ 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1
 ^https:\/\/duckduckgo\.com\/\?q=ggj\+([^&]+).+ 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1
+^https:\/\/duckduckgo\.com\/\?q=ytb\+([^&]+).+ 302 https://www.youtube.com/results?search_query=$1
+^https:\/\/duckduckgo\.com\/\?q=bli\+([^&]+).+ 302 https://m.bilibili.com/search?keyword=$1
+^https:\/\/duckduckgo\.com\/\?q=af\+([^&]+).+ 302 https://www.acfun.cn/search?keyword=$1
+^https:\/\/duckduckgo\.com\/\?q=ph\+([^&]+).+ 302 https://cn.pornhub.com/video/search?search=$1
+^https:\/\/duckduckgo\.com\/\?q=db\+([^&]+).+ 302 https://m.douban.com/search/?query=$1
+^https:\/\/duckduckgo\.com\/\?q=zh\+([^&]+).+ 302 https://www.zhihu.com/search?q=$1
+^https:\/\/duckduckgo\.com\/\?q=wb\+([^&]+).+ 302 https://s.weibo.com/weibo/$1
+^https:\/\/duckduckgo\.com\/\?q=tt\+([^&]+).+ 302 https://twitter.com/search?q=$1
+^https:\/\/duckduckgo\.com\/\?q=jd\+([^&]+).+ 302 https://so.m.jd.com/ware/search.action?keyword=$1
+^https:\/\/duckduckgo\.com\/\?q=tb\+([^&]+).+ 302 https://s.m.taobao.com/h5?q=$1
+^https:\/\/duckduckgo\.com\/\?q=ddg\+([^&]+).+ 302 https://duckduckgo.com/?ia=about&q=$1
+^https:\/\/duckduckgo\.com\/\?q=icn\.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc=
+^https:\/\/duckduckgo\.com\/\?q=ius\.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143441&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=us&urlDesc= 
+^https:\/\/duckduckgo\.com\/\?q=ihk\.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143463&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=hk&urlDesc= 
+^https:\/\/duckduckgo\.com\/\?q=itw\.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143470&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tw&urlDesc= 
+^https:\/\/duckduckgo\.com\/\?q=ijp\.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143462&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=jp&urlDesc= 
+^https:\/\/duckduckgo\.com\/\?q=ikr\.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143466&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=kr&urlDesc=
+^https:\/\/duckduckgo\.com\/\?q=itr\.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143480&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc=
 ^https:\/\/duckduckgo\.com\/\?q=([^&]+).+ 302 https://www.google.com/search?q=$1
 
 [MitM]
