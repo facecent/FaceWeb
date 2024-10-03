@@ -1,16 +1,10 @@
-<H2>使用方法
+<H2>使用方法</H2>
 
 1. 先进入设置更改Safari默认搜索为DuckDuckGo；
 2. Safari内输入`快捷键`+`空格`+`搜索关键词`快速指定搜索引擎搜索，如指定使用维基百科搜索`TUN`，则直接在Safari地址栏内输入`wk TUN`即可直达维基百科的搜索结果页面；
 3. 目前仅内置了一些常用站点的支持，他们的`快捷键`如下：
 <hr />
-<p>bd = 百度搜索
-  <br>bdimg = 百度图片搜索
-  <br>ghimg = 谷歌图片搜索
-  <br>by = Bing搜索
-  <br>wk = 维基搜索
-  <br>qm = 七麦搜索
-  <br>gh = GitHub搜索
+>bd = 百度搜索<br>bdimg = 百度图<br>ghimg = 谷歌图片搜索<br>by = Bing搜索<br>wk = 维基搜索<br>qm = 七麦搜索<br>gh = GitHub搜索
   <br> yh = 油猴搜索
   <br>ggc = Google译至中
   <br>gge = Google译至英
