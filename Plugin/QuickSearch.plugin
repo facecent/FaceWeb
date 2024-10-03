@@ -16,6 +16,7 @@
 # 先进入设置更改Safari默认搜索为DuckDuckGo
 
 # bd = 百度搜索
+# ydimg = yandex图片搜索
 # bdimg = 百度图片搜索
 # ghimg = 谷歌图片搜索
 # by = Bing搜索
@@ -48,6 +49,7 @@
 
 
 ^https:\/\/duckduckgo\.com\/\?q=bd\+([^&]+).+ 302 https://www.baidu.com/s?wd=$1
+^https:\/\/duckduckgo\.com\/\?q=ydimg\+([^&]+).+ 302 https://yandex.com/images/touch/search?lr=10636&text=$1
 ^https:\/\/duckduckgo\.com\/\?q=bdimg\+([^&]+).+ 302 https://image.baidu.com/search/index?tn=baiduimage&word=$1
 ^https:\/\/duckduckgo\.com\/\?q=ggimg\+([^&]+).+ 302 https://www.google.com/search?&tbm=isch&q=$1
 ^https:\/\/duckduckgo\.com\/\?q=by\+([^&]+).+ 302 https://www.bing.com/search?q=$1
