@@ -31,9 +31,8 @@
 # ggj = Google
 # 无快捷键则默认使用Google搜索
 
-http-request ^https:\/\/duckduckgo.com\/\?q=dlc(\+|%20)([^&]+).+ requires-body=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/DeepLQ-search.js,tag=DeepLtoChinese
+http-request ^https:\/\/duckduckgo\.com\/\?q=dlc\+([^&]+).+ requires-body=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/DeepLQ-search.js,tag=DeepLtoChinese
 http-request ^https:\/\/duckduckgo.com\/\?q=dle(\+|%20)([^&]+).+ requires-body=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/DeepLQ-search.js,tag=DeepLtoEnglish
-http-request ^https:\/\/duckduckgo.com\/\?q=dlj(\+|%20)([^&]+).+ requires-body=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/DeepLQ-search.js,tag=DeepLtoJapanese
 
 [Rewrite]
 
@@ -46,8 +45,8 @@ http-request ^https:\/\/duckduckgo.com\/\?q=dlj(\+|%20)([^&]+).+ requires-body=1
 ^https:\/\/duckduckgo\.com\/\?q=gh\+([^&]+).+ 302 https://github.com/search?q=$1
 ^https:\/\/duckduckgo\.com\/\?q=yh\+([^&]+).+ 302 https://greasyfork.org/zh-CN/scripts?q=$1
 ^https:\/\/duckduckgo\.com\/\?q=ggc\+([^&]+).+ 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1
-^https:\/\/duckduckgo\.com\/\?q=gge(\+|%20)([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$2 302
-^https:\/\/duckduckgo.com\/\?q=ggj(\+|%20)([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$2 302
+^https:\/\/duckduckgo\.com\/\?q=gge\+([^&]+).+ 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1
+^https:\/\/duckduckgo\.com\/\?q=ggj\+([^&]+).+ 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1
 ^https:\/\/duckduckgo\.com\/\?q=([^&]+).+ 302 https://www.google.com/search?q=$1
 
 [MitM]
